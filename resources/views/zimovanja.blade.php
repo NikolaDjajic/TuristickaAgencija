@@ -14,7 +14,7 @@ use App\Models\Package;
                     <div class="cta-content">
                         <br>
                         <br>
-                        <h2>Nase <em>Ponude</em></h2>
+                        <h2>Zimo<em>vanja</em></h2>
                         <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula</p>
                     </div>
                 </div>
@@ -36,13 +36,17 @@ use App\Models\Package;
                 </div>
             </div>
             <div class="section-heading1">
-                <h2>&emsp;&emsp;Ljetovanja</h2>
+                <h2>&emsp;&emsp;Zimovanja</h2>
                 <br>
             </div>
             <div class="row">
-                @foreach($packages as $package)
-                <x-package-one-card :package="$package" />
-                @endforeach
+                @foreach($packages as $key => $package)
+        <x-package-one-card :package="$package" />
+
+            @if(($key + 1) % 3 === 0)
+                </div><div class="row">
+                @endif
+            @endforeach
             </div>
 
             <!-- Dugme -->
@@ -53,25 +57,7 @@ use App\Models\Package;
     <!-- ***** ljeto-->
 
                 <!-- Dugmad dole -->
-            <nav>
-              <ul class="pagination pagination-lg justify-content-center">
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+        
 
         </div>
     </section>

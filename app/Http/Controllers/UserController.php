@@ -63,7 +63,7 @@ class UserController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        return redirect('/login');
     }
 
     public function showComment($id){
@@ -104,7 +104,7 @@ class UserController extends Controller
         return view('users/package-details', [
             'package' => $package,
             'packages' => Package::all(),
-            'comments' => Comment::izdvojiPoIndeksu($package->id)
+            'comments' => Comment::where('package_id', $package->id)->get()
         ]);
     }
 
@@ -137,14 +137,16 @@ class UserController extends Controller
             'prevoz' => 'required',
             'vrsta' => 'required',
             'opis' => 'required',
-            'image' => 'nullable'
+            'slika' => 'nullable'
         ]);
 
-     //   if($request->hasFile('image')){
-      //      $formFields['image'] = $request->file('image')->store('menu', 'public');
-       // }
+        if($request->hasFile('slika')){
+            $formFields['slika'] = $request->file('slika')->store('images','public');
+        }
 
-        //dd($request);
+       
+
+        
         Package::create($formFields);
         return redirect('/dashboard/packages');
     }

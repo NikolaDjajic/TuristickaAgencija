@@ -22,7 +22,7 @@ class commentController extends Controller
     return view('package-details', [
         'package' => $package,
         'packages' => Package::all(),
-        'comments' => Comment::izdvojiPoIndeksu($package->id)
+        'comments' => Comment::where('package_id', $package->id)->get()
     ]);
 }   
 }

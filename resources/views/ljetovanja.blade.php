@@ -14,7 +14,7 @@ use App\Models\Package;
                     <div class="cta-content">
                         <br>
                         <br>
-                        <h2>Nase <em>Ponude</em></h2>
+                        <h2>Ljeto<em>vanja</em></h2>
                         <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula</p>
                     </div>
                 </div>

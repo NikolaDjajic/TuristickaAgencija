@@ -2,9 +2,9 @@
 
 <style>
     .comment-box {
-    background-color: #db0404; /* Boja pozadine */
-    padding: 10px; /* Dodajte margine unutar div-a za bolji izgled */
-    border-radius: 5px; /* Dodajte zaobljeni ivičnjak za lepši izgled */
+    background-color: #B0B0B0;
+    padding: 10px; 
+    border-radius: 5px; 
 }
 </style>
 <div class="comment-box">

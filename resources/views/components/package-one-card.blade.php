@@ -2,9 +2,18 @@
 
 <div class="col-lg-4">
     <div class="trainer-item">
+            <?php
+                use Illuminate\Support\Facades\File;
+                $files = File::files(public_path('images/product'));
+                $randomIndex = rand(0, count($files) - 1);
+                $randomImagePath = $files[$randomIndex];
+                $randomImageName = basename($randomImagePath);
+            ?>
+
         <div class="image-thumb">
-            <img src="{{asset('images/product-1-720x480.jpg')}}" alt="">
+            <img src="{{ asset('images/product/'. $randomImageName)}}" alt="public/images/product/{{$randomImageName}}">  
         </div>
+
         <div class="down-content">
             <span>
                 <sup>$</sup>300.00 - <sup>$</sup>400.00

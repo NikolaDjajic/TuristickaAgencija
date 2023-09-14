@@ -15,8 +15,4 @@ class Comment extends Model
         'komentar',
         'odgovorZa'
     ];
-    public static function izdvojiPoIndeksu($indeks)
-    {
-        return static::where('package_id', $indeks)->get();
-    }
 }

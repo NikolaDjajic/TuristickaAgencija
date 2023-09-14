@@ -29,10 +29,20 @@
  </style>
 @section('content')
 
-  
     <!-- ***** Call to Action Start ***** -->
-    <section class="section section-bg" id="call-to-action" style="background-image: url('{{ asset('images/banner-image-1-1920x500.jpg') }}')">
-        <div class="container">
+    @if($package->vrsta ==="LJ")
+     <section class="section section-bg" id="call-to-action" style="background-image: url('{{ asset('storage/' . $package->slika) }}')">
+     @endif
+     @if($package->vrsta ==="Z")
+     <section class="section section-bg" id="call-to-action" style="background-image: url('{{ asset('storage/' . $package->slika) }}')">
+     @endif
+     @if($package->vrsta ==="I")
+     <section class="section section-bg" id="call-to-action" style="background-image: url('{{ asset('storage/' . $package->slika) }}')">
+     @endif
+     @if($package->vrsta ==="O")
+     <section class="section section-bg" id="call-to-action" style="background-image: url('{{ asset('storage/' . $package->slika) }}')">
+     @endif
+     <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="cta-content">
@@ -81,8 +91,8 @@
                   <img class="d-block w-100" src="{{asset('images/package-image-1-1200x600.jpg')}}" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="{{asset('images/package-image-1-1200x600.jpg')}}" alt="Third slide">
-                </div>
+                    <img src="{{ asset('storage/' . $package->slika) }}" alt="Slika">
+               </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>

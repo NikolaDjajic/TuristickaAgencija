@@ -14,11 +14,8 @@ use App\Models\Package;
 
         <div class="video-overlay header-text">
             <div class="caption">
-                <h6>Lorem ipsum dolor sit amet</h6>
+                <h6><em>Turisticka </em> Agencija</h6>
                 <h2><em>Istrazi</em> Svijet sa nama!</h2>
-                <div class="main-button">
-                    <a href="kontakt">Contact Us</a>
-                </div>
             </div>
         </div>
     </div>
@@ -41,14 +38,14 @@ use App\Models\Package;
                 <br>
             </div>
             <div class="row">
-                @foreach($packagesLJ = Package::izdvojiPoVrsti('LJ') as $package)
+                @foreach($packagesLJ = Package::where('vrsta','LJ')->get() as $package)
                 <x-package-one-card :package="$package" />
                 @endforeach
             </div>
 
             <!-- Dugme -->
                 <div class="main-button text-center">
-                    <a href="/ponude">Sva ljetovanja</a>
+                    <a href="/ljetovanja">Sva ljetovanja</a>
                 </div>
 
             </div>
@@ -65,14 +62,14 @@ use App\Models\Package;
                 <br>
             </div>
             <div class="row">
-                @foreach($packagesZ = Package::izdvojiPoVrsti('Z') as $package)
+                @foreach($packagesZ = Package::where('vrsta','Z')->get() as $package)
                 <x-package-one-card :package="$package" />
                 @endforeach
             </div>
 
             <!-- Dugme -->
                 <div class="main-button text-center">
-                    <a href="packages.html">Sva zimovanja</a>
+                    <a href="/zimovanja">Sva zimovanja</a>
                 </div>
             </div>
         </section>
@@ -88,14 +85,14 @@ use App\Models\Package;
                 <br>
             </div>
             <div class="row">
-                @foreach($packagesI = Package::izdvojiPoVrsti('I') as $package)
+                @foreach($packagesLJ = Package::where('vrsta','I')->get() as $package)
                 <x-package-one-card :package="$package" />
                 @endforeach
             </div>
 
             <!-- Dugme -->
                 <div class="main-button text-center">
-                    <a href="packages.html">Svi izleti</a>
+                    <a href="/izleti">Svi izleti</a>
                 </div>
             </div>
         </section>

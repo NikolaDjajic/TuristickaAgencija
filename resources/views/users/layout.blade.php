@@ -28,13 +28,13 @@
     
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky" style="background-image: url({{asset('images/banner-image-1-1920x500.jpg')}})">
-        >
+        
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="/" class="logo">Travel Agency<em> Website</em></a>
+                        <a href="/" class="logo">Turisticka <em> Agencija</em></a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">

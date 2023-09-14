@@ -45,11 +45,8 @@ Route::post('/authenticate', [UserController::class, 'authenticate']);
 Route::get('/logout', [UserController::class, 'logout'])->middleware('auth');
 Route::get('/dashboard', [UserController::class, 'dashboard'])->middleware('auth');
 
-//Privremeno (Vjv za dodavanje novog admina)
 Route::get('/register', [UserController::class, 'create']);
-Route::post('/users', [UserController::class, 'store']);
 
-//Dodavanje admina
 Route::get('/dashboard/addAdmin', [UserController::class, 'showAddAdmin'])->middleware('auth');
 Route::post('/dashboard/addAdmin', [UserController::class, 'storeAdmin'])->middleware('auth');
 

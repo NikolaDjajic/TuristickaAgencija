@@ -14,7 +14,7 @@ use App\Models\Package;
                     <div class="cta-content">
                         <br>
                         <br>
-                        <h2>Nase <em>Ponude</em></h2>
+                        <h2> Iz<em>leti</em></h2>
                         <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula</p>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ use App\Models\Package;
                 </div>
             </div>
             <div class="section-heading1">
-                <h2>&emsp;&emsp;Ljetovanja</h2>
+                <h2>&emsp;&emsp;Izleti</h2>
                 <br>
             </div>
             <div class="row">

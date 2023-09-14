@@ -70,7 +70,7 @@ use App\Models\Package;
                   <div class="contact-us">
                   <div class="contact-form">
       
-                    <form action="{{ url()->current() }}" id="contact" method="POST">
+                    <form action="{{ url()->current() }}" id="contact" method="POST" enctype="multipart/form-data">
                      @csrf 
                      <div class="row justify-content-center">
                                     <div class="col-md-4 d-flex justify-content-center">

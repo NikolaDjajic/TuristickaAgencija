@@ -20,11 +20,7 @@ class Package extends Model
         'vrsta',
         'hotel'
     ];
-    public static function izdvojiPoVrsti($vrsta)
-    {
-        return static::where('vrsta', $vrsta)->get();
-    }
-
+   
     public function comments()
 {
     return $this->hasMany(Comment::class);
