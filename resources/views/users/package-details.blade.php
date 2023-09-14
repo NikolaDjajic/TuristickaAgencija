@@ -9,6 +9,23 @@
         overflow: auto;
     }
 
+    .main-button1 input {
+  display: inline-block;
+  font-size: 15px;
+  padding: 12px 20px;
+  background-color: #ed563b;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all .3s;
+}
+
+.main-button1 input:hover {
+  background-color: #f9735b;
+  color: #fff;
+}
+
  </style>
 @section('content')
 
@@ -25,21 +42,13 @@
                         <p>Od {{$package->polazak}} do {{$package->povratak}}</p>
 
                         <div class="row justify-content-center">
-                         <div class="col-md-4 text-center">
-                             <div class="main-button mb-3">
-                                 <a href="#" data-toggle="modal" data-target="#exampleModal">Izmjeni</a>
-                             </div>
-                         </div>
-                     
-                         <div class="col-md-4 text-center">
-                              
-
                               <form method="POST" action="/dashboard/ponuda/{{$package->id}}">
                                    @csrf
                                    @method('DELETE')
-                                   <button class="main-button mb-3">Obrisi</button>
+                                   <div class="main-button1 mb-3">
+                                        <input type="submit" value="Obrisi">
+                                   </div>                                   
                               </form>
-
                          </form>
                          </div>
                      </div>

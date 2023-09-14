@@ -27,9 +27,9 @@ use App\Models\Package;
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>Naša<em> ponuda</em></h2>
+                        <h2>Sve<em> ponude</em></h2>
                         <img src="{{asset('images/line-dec.png')}}" alt="">
-                        <p>Uzivajte u najboljim svjetskim destinacijama po povoljnim cijenama uz vrhunski smjestaj.</p>
+                        <br>
                         <div class="main-button mb-3">
                             <a href="#" data-toggle="modal" data-target="#exampleModal">Dodaj ponudu</a>
                         </div>
