@@ -23,7 +23,8 @@
 }
 
  </style>
-
+<section class="section section-bg" id="call-to-action" style="background-image: url({{asset('images/banner-image-1-1920x500.jpg')}})">
+</section>
      <!-- Page Content  -->
      
           <section class="section" id="trainers">

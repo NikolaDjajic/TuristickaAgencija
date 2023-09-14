@@ -7,7 +7,7 @@ use App\Models\Package;
 @section('content')
 
     <!-- ***** Call to Action Start ***** -->
-    <section class="section section-bg" id="call-to-action" style="background-image: url({{asset('images/banner-image-1-1920x500.jpg')}})">
+    <section class="section section-bg" id="call-to-action" style="background-image: url({{asset('images/more-1920x1200-for-hd.jpg')}})">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">

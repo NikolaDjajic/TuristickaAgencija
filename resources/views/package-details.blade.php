@@ -14,9 +14,19 @@
  </style>
 @section('content')
 
+     @if($package->vrsta ==="LJ")
+          <section class="section section-bg" id="call-to-action" style="background-image: url('{{ asset('images/more-1920x1200-for-hd.jpg')}}')">
+     @endif
+     @if($package->vrsta ==="Z")
+          <section class="section section-bg" id="call-to-action" style="background-image: url('{{ asset('images/view-snowy-mountain-fir-trees-with-blue-sky-background.jpg')}}')">
+     @endif
+     @if($package->vrsta ==="I")
+          <section class="section section-bg" id="call-to-action" style="background-image: url('{{ asset('images/91851-tours-landmark-architecture-medieval_architecture-tree-1920x1080.jpg')}}')">
+     @endif
+     @if($package->vrsta ==="O")
+          <section class="section section-bg" id="call-to-action" style="background-image: url('{{ asset('images/travel.jpg')}}')">
+     @endif
   
-    <!-- ***** Call to Action Start ***** -->
-    <section class="section section-bg" id="call-to-action" style="background-image: url('{{ asset('images/banner-image-1-1920x500.jpg') }}')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">

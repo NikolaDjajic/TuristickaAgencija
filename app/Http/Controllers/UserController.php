@@ -47,14 +47,14 @@ class UserController extends Controller
         if(auth()->attempt($formFields)) {
             $request->session()->regenerate();
 
-            return redirect('/dashboard')->with('message', 'You are now logged in!');
+            return redirect('/dashboard/packages')->with('message', 'You are now logged in!');
         }
 
         return back()->withErrors(['email' => 'Invalid Credentials'])->onlyInput();
     }
 
     public function dashboard(){
-        return view('users/dashboard');
+        return view('users/dashboard/packages');
     }
 
     public function logout(Request $request){
@@ -87,7 +87,7 @@ class UserController extends Controller
     public function deleteComment($id){
         $item = Comment::find($id);
         $item->delete();
-        return redirect('/dashboard');
+        return redirect('/dashboard/comments');
     }
 
     public function showAddAdmin(){
@@ -122,7 +122,7 @@ class UserController extends Controller
         //napravati korisnika
         $user = User::create($formFields);
         
-        return redirect('/dashboard');
+        return redirect('/dashboard/packages');
     }
 
     public function storePackage(Request $request){
@@ -143,10 +143,6 @@ class UserController extends Controller
         if($request->hasFile('slika')){
             $formFields['slika'] = $request->file('slika')->store('images','public');
         }
-
-       
-
-        
         Package::create($formFields);
         return redirect('/dashboard/packages');
     }
@@ -160,6 +156,6 @@ class UserController extends Controller
         $co->prezime = $request->input('prezime');
         $co->odgovorZa = $request->input('odgovorZa');
         $co->save();
-        return redirect('/dashboard');
+        return redirect('/dashboard/comments');
     }
 }

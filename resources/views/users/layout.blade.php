@@ -25,9 +25,9 @@
 
     <!-- ***** Preloader End ***** -->
     
-    
+
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky" style="background-image: url({{asset('images/banner-image-1-1920x500.jpg')}})">
+    <header class="header-area header-sticky" >
         
         <div class="container">
             <div class="row">
