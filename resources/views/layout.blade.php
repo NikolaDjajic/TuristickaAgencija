@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="{{asset('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap')}}" rel="stylesheet">
 
-    <title>DjajaTravel</title>
+    <title>Travel</title>
 
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
 
@@ -20,10 +20,6 @@
     </head>
     
     <body>
-    
-    <!-- ***** Preloader Start ***** -->
-
-    <!-- ***** Preloader End ***** -->
     
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky">
@@ -65,6 +61,9 @@
 
 
     <footer>
+        <br>
+        <br>
+        <br>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

@@ -122,6 +122,8 @@ use App\Models\Package;
         </div>
     </div>
 
+    
+
     <div class="col-md-4">
         <div class="d-flex justify-content-center">
             <fieldset>
@@ -148,16 +150,15 @@ use App\Models\Package;
     </div>
 
     <div class="col-md-4">
-        <div class="d-flex justify-content-center">
-            <fieldset>
-                <label for="vrsta">Vrsta</label>
-                <select name="vrsta" id="vrsta">
-                    <option value="LJ">Ljetovanje</option>
-                    <option value="Z">Zimovanje</option>
-                    <option value="I">Izlet</option>
-                    <option value="O">Ostalo</option>
-               </select>   
-             </fieldset>
+        <div class="d-flex flex-column align-items-start">
+            <label for="vrsta">Vrsta</label>
+    
+            <select name="vrsta" id="vrsta">
+                <option value="LJ">Ljetovanje</option>
+                <option value="Z">Zimovanje</option>
+                <option value="I">Izlet</option>
+                <option value="O">Ostalo</option>
+            </select>
         </div>
     </div>
 
@@ -171,7 +172,16 @@ use App\Models\Package;
     </div>
 </div>
 
-  
+<div class="row">
+    <div class="col-md-3">
+        <div class="d-flex justify-content-center">
+            <fieldset>
+                <label for="cijena">Cijena</label>
+                <input type="number" id="cijena" name="cijena" class="form-control" placeholder="Cijena" required>
+            </fieldset>
+        </div>
+    </div>
+</div>
                         <br>
                         <div class="row">
                           <div class="col-md-12">
@@ -181,10 +191,14 @@ use App\Models\Package;
                                </fieldset>
                              </div>
                         </div>
+
+                       
+
                  </div>
                  </div>
                 </div>
                 <div class="modal-footer">
+                    
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Otkazi</button>
                   <button type="submit" name="submitDugme" class="btn btn-primary">Dodaj</button>
                 </div>

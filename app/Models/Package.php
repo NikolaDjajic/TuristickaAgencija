@@ -12,6 +12,7 @@ class Package extends Model
         'naslov',
         'godDoba',
         'brNocenja',
+        'cijena',
         'slika',
         'adresa',
         'polazak',

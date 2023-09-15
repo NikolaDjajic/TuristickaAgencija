@@ -44,6 +44,7 @@ Route::get('/login', [UserController::class, 'login'])->name('login');
 Route::post('/authenticate', [UserController::class, 'authenticate']);
 Route::get('/logout', [UserController::class, 'logout'])->middleware('auth');
 Route::get('/dashboard', [UserController::class, 'dashboard'])->middleware('auth');
+Route::post('/users', [UserController::class, 'store']);
 
 Route::get('/register', [UserController::class, 'create']);
 

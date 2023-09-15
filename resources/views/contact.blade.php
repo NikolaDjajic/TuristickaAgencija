@@ -9,7 +9,7 @@
                     <div class="cta-content">
                         <br>
                         <br>
-                        <h2>Slobodno nas<em> kontaktirajte</em></h2>
+                        <h2>Kontaktirajte<em> nas</em></h2>
                         <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula</p>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                         <i class="fa fa-map-marker"></i>
                     </div>
 
-                    <h5>212 Barrington Court New York</h5>
+                    <h5>Kralja Petra I Karađorđevića, Banja Luka</h5>
 
                     <br>
                 </div>
@@ -65,49 +65,17 @@
    
     <!-- ***** Contact Us Area Starts ***** -->
     <section class="section" id="contact-us" style="margin-top: 0">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div id="map">
-                      <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div class="contact-form section-bg" style="background-image: url(assets/images/contact-1-720x480.jpg)">
-                        <form id="contact" action="" method="post">
-                          <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="name" type="text" id="name" placeholder="Your Name*" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email*" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                              <fieldset>
-                                <input name="subject" type="text" id="subject" placeholder="Subject">
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <textarea name="message" rows="6" id="message" placeholder="Message" required=""></textarea>
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <button type="submit" id="form-submit" class="main-button">Send Message</button>
-                              </fieldset>
-                            </div>
-                          </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12 mx-auto">
+              <div id="map">
+                <iframe src="https://maps.google.com/maps?q=Краља+Петра+I+Карађорђевића,+Бања+Лука+78000/@44.7716704,17.1900236,19z/data=!4m16!1m9!4m8!1m0!1m6!1m2!1s0x475e031b063a2517:0x46746f44d807a7a1!2z0JrRgNCw0ZnQsCDQn9C10YLRgNCwIEkg0JrQsNGA0LDRktC-0YDRktC10LLQuNGb0LAsINCR0LDRmtCwINCb0YPQutCwIDc4MDAw!2m2!1d17.1904534!2d44.771638!3m5!1s0x475e031b063a2517:0x46746f44d807a7a1!8m2!3d44.771638!4d17.1904534!16s%2Fg%2F11cn2mbzfx?entry=ttu&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
     <!-- ***** Contact Us Area Ends ***** -->
 
 @endsection

@@ -12,7 +12,7 @@ class UserController extends Controller
 {
 
     public function create() {
-        return view('users.register');
+        return view('users/register');
     }
 
     // Create New User
@@ -32,7 +32,7 @@ class UserController extends Controller
         // Login
         auth()->login($user);
 
-        return redirect('/dashboard')->with('message', 'User created and logged in');
+        return redirect('/dashboard/packages')->with('message', 'User created and logged in');
     }
     public function login(){
         return view('users/login');
@@ -54,8 +54,9 @@ class UserController extends Controller
     }
 
     public function dashboard(){
-        return view('users/dashboard/packages');
-    }
+        return view('users/packages', [
+            'packages' => Package::all()
+        ]);    }
 
     public function logout(Request $request){
         auth()->logout();
@@ -131,6 +132,7 @@ class UserController extends Controller
             'naslov' => 'required',
             'godDoba' => 'required',
             'brNocenja' => 'required',
+            'cijena' => 'required',
             'adresa' => 'required',
             'hotel' => 'required',
             'polazak' => 'required',

@@ -106,7 +106,7 @@ use App\Models\Package;
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading dark-bg">
-                        <h2>Read <em>About Us</em></h2>
+                        <h2>O<em> nama</em></h2>
                         <img src="{{asset('images/line-dec.png')}}" alt="">
                         <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
                     </div>
@@ -130,7 +130,7 @@ use App\Models\Package;
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>Read our <em>Testimonials</em></h2>
+                        <h2>Iskustva naših<em> korisnika </em></h2>
                         <img src="{{asset('images/line-dec.png')}}" alt="waves">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem incidunt alias minima tenetur nemo necessitatibus?</p>
                     </div>
@@ -148,7 +148,7 @@ use App\Models\Package;
                         </li>
                         <li class="feature-item">
                             <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="second one">
+                                <img src="{{asset('images/features-first-icon.png')}}" alt="second one">
                             </div>
                             <div class="right-content">
                                 <h4>John Doe</h4>
@@ -161,7 +161,7 @@ use App\Models\Package;
                     <ul class="features-items">
                         <li class="feature-item">
                             <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="fourth muscle">
+                                <img src="{{asset('images/features-first-icon.png')}}" alt="fourth muscle">
                             </div>
                             <div class="right-content">
                                 <h4>John Doe</h4>
@@ -170,7 +170,7 @@ use App\Models\Package;
                         </li>
                         <li class="feature-item">
                             <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="training fifth">
+                                <img src="{{asset('images/features-first-icon.png')}}" alt="training fifth">
                             </div>
                             <div class="right-content">
                                 <h4>John Doe</h4>
@@ -180,12 +180,7 @@ use App\Models\Package;
                     </ul>
                 </div>
             </div>
-
             <br>
-
-            <div class="main-button text-center">
-                <a href="testimonials.html">Read More</a>
-            </div>
         </div>
     </section>
     <!-- ***** Testimonials Item End ***** -->
@@ -197,7 +192,7 @@ use App\Models\Package;
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="cta-content">
-                        <h2>Send us a <em>message</em></h2>
+                        <h2>Kontaktirajte <em>nas</em></h2>
                         <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
                         <div class="main-button">
                             <a href="kontakt">Kontaktirajte nas</a>

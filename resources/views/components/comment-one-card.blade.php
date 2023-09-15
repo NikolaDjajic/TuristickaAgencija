@@ -12,7 +12,7 @@ use App\Models\Comment;
 }
 </style>
 <div class="comment-box">
-    <h4>{{$comment->ime}} {{$comment->prezime}}</h4>
+    <h4>{{$comment->ime}} {{$comment->prezime}} </h4>
     <p><em>{{$comment->komentar}} </em></p>
 </div>
 

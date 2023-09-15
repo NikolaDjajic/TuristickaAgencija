@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('naslov');
             $table->string('godDoba');
             $table->integer('brNocenja');
+            $table->integer('cijena');
             $table->string('slika');
             $table->string('hotel');
             $table->string('adresa');
