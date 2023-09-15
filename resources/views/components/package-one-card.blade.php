@@ -10,13 +10,17 @@
                 $randomImageName = basename($randomImagePath);
             ?>
 
+<div class="image-thumb">
+    <img src="{{ asset('storage/' . $package->slika) }}" alt="Slika">
+</div>
+<!--
         <div class="image-thumb">
             <img src="{{ asset('images/product/'. $randomImageName)}}" alt="public/images/product/{{$randomImageName}}">  
         </div>
-
+    -->
         <div class="down-content">
-            <span>
-                <sup>$</sup>300.00 - <sup>$</sup>400.00
+            <span style="font-size: larger;">
+                <sup>$</sup>{{$package->cijena}}
             </span>
 
             <h4>{{$package->naslov}}</h4>

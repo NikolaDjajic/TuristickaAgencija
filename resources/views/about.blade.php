@@ -10,7 +10,7 @@
                         <br>
                         <br>
                         <h2>O <em>Nama</em></h2>
-                        <p>Nesto vise o nama i nasim projektima</p>
+                        <p>Dobrodošli u TravelBL - Vaš Partner za Nezaboravna Putovanja</p>
                     </div>
                 </div>
             </div>
@@ -26,33 +26,58 @@
             <div class="row" id="tabs">
               <div class="col-lg-4">
                 <ul>
-                  <li><a href='#tabs-1'><i class="fa fa-soccer-ball-o"></i>Nasi Ciljevi</a></li>
-                  <li><a href='#tabs-2'><i class="fa fa-briefcase"></i>Nas Rad</a></a></li>
-                  <li><a href='#tabs-3'><i class="fa fa-heart"></i>Nasa Strast</a></a></li>
+                  <li><a href='#tabs-1'><i class="fa fa-soccer-ball-o"></i>Naši Ciljevi</a></li>
+                  <li><a href='#tabs-2'><i class="fa fa-briefcase"></i>Naš Rad</a></a></li>
+                  <li><a href='#tabs-3'><i class="fa fa-heart"></i>Naša Strast</a></a></li>
                 </ul>
               </div>
               <div class="col-lg-8">
                 <section class='tabs-content'>
                   <article id='tabs-1'>
-                    <h4>Nasi Ciljevi</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aspernatur natus dignissimos eos quod, odio.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cupiditate ullam exercitationem molestiae illum? Nam magni, saepe sint maiores vitae!</p>
-                    <p>Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi suscipit commodi impedit unde accusantium nam incidunt tenetur, libero maiores enim! Nisi ex odit, totam nihil doloribus. Nemo ut, eos consequatur libero aut quas dolorum ipsa, quidem, totam dicta id possimus dolores distinctio laboriosam doloribus voluptates tenetur consectetur inventore aliquid dolorem?</p>
+                    <h4>Naši Ciljevi</h4>
+                   <p>Naša temeljna svrha je da vam omogućimo da ostvarite svoje snove o putovanjima. Postavljanje visokih ciljeva i težnja ka njihovom ostvarivanju duboko su ukorenjeni u našem poslovanju. Evo nekoliko ključnih ciljeva koji nas motivišu:
+                    <br>
+                    <br>
+
+                    Klijent-Zadovoljstvo: Naš prvenstveni cilj je da svaki klijent bude apsolutno zadovoljan svojim putovanjem. To postižemo pružanjem najboljih usluga, prilagođenih putovanja i besprekornih iskustava.
+                    <br>                    <br>
+
+                    Destinacije bez Granica: Nastojimo da vam otvorimo vrata ka svetu. Naš cilj je da vam omogućimo da istražujete različite kulture, predele i avanture širom sveta.
+                    <br>
+                    <br>
+
+                    Očuvanje Prirode i Kulture: Svesni smo odgovornosti prema destinacijama koje posetimo i trudimo se da promovišemo održivi turizam. Naš cilj je da se gosti osećaju dobrodošlima, a istovremeno da čuvamo prirodno i kulturno bogatstvo destinacija koje posetimo.</p>
                     <img src="{{asset('images/about-image-1-940x460.jpg')}}" alt="">
                   </article>
                   <article id='tabs-2'>
-                    <h4>Nas Rad</h4>
-                    <p>Integer dapibus, est vel dapibus mattis, sem mauris luctus leo, ac pulvinar quam tortor a velit. Praesent ultrices erat ante, in ultricies augue ultricies faucibus. Nam tellus nibh, ullamcorper at mattis non, rhoncus sed massa. Cras quis pulvinar eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ut accusantium cum! Ad quisquam, aut praesentium magni pariatur ipsa! Soluta deserunt accusantium repellendus ratione quam hic facere, cupiditate iste obcaecati a, officiis ipsum aspernatur in?</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a necessitatibus eos vitae quibusdam quo sunt officiis rerum voluptatibus non natus eius placeat officia vel quaerat, reprehenderit obcaecati, eaque? Repudiandae ad facere culpa accusamus aliquam ab assumenda reiciendis corrupti cum nemo, cumque molestiae corporis deserunt!</p>
+                    <h4>Naš Rad</h4>
+                    <p>Naša strast prema putovanjima ne bi bila ostvariva bez naše predanosti i radne etike. Ovde je kako radimo:
+                      <br>
+                      <br>
+                      Stručni Tim: Naš tim stručnjaka je obučen i iskusan u turističkoj industriji. Posvećeni smo stalnom učenju i praćenju najnovijih trendova kako bismo vam pružili najbolje savete.
+                      <br>
+                    <br>
+                      Prilagođena Ponuda: Svako putovanje koje organizujemo je pažljivo prilagođeno potrebama i željama naših klijenata. Nema dve iste avanture jer se trudimo da svako iskustvo bude jedinstveno.
+                      <br>
+                    <br>
+                      Transparentnost i Pouzdanost: Gradimo odnose sa našim klijentima na osnovu poverenja. Naša transparentnost u cenama, uslugama i komunikaciji ključna je za uspešno partnerstvo.</p>
                     <img src="{{asset('images/about-image-2-940x460.jpg')}}" alt="">
                   </article>
                   <article id='tabs-3'>
-                    <h4>Nasa Strast</h4>
-                    <p>Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id auctor neque posuere sit amet. Aliquam pharetra, augue vel cursus porta, nisi tortor vulputate sapien, id scelerisque felis magna id felis. Proin neque metus, pellentesque pharetra semper vel, accumsan a neque.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aut beatae commodi repudiandae distinctio, magnam blanditiis reiciendis vitae velit voluptatum natus, fugit quis eos dolores!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic adipisci reiciendis quaerat qui earum aut, atque esse quisquam quis exercitationem sapiente, dolorum consequatur consequuntur voluptatibus ipsam, fuga magnam beatae optio nam. Recusandae ut aliquid, eligendi.</p>
+                    <h4>Naša Strast</h4>
+                    <p>Strast prema putovanjima je srce našeg poslovanja. To je ono što nas pokreće i inspiriše svaki dan:
+                      <br>
+                      <br>
+                      Istraživanje Novih Horizonta: Zaljubljeni smo u istraživanje nepoznatih destinacija i stvaranje nezaboravnih uspomena. Naša strast prema putovanjima nadahnjuje nas da stvaramo jedinstvene avanture za vas.
+                      <br>
+                    <br>
+                      Deljenje Radosti Putovanja: Ništa nas ne čini srećnijim od saznanja da smo vam pomogli da doživite nešto novo i posebno. To je ono što nas svakodnevno motiviše.
+                      <br>
+                    <br>
+                      Povezivanje sa Kulturom i Prirodom: Putovanje je prilika da se dublje povežemo sa različitim kulturama i prirodnim čudima sveta. Naša strast je učiti i deliti ova iskustva sa vama.
+                      <br>
+                    <br>
+                      Naša agencija je više od posla, to je izražavanje naše strasti prema putovanjima i želje da tu strast podelimo sa vama. Hvala što ste deo naše priče o putovanjima!</p>
                     <img src="{{asset('images/about-image-3-940x460.jpg')}}" alt="">
                   </article>
                 </section>

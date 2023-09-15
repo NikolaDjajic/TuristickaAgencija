@@ -15,7 +15,7 @@ use App\Models\Package;
                         <br>
                         <br>
                         <h2>Ljeto<em>vanja</em></h2>
-                        <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula</p>
+                        <p>Otkrijte raj na zemlji - naša turistička agencija će vam omogućiti savršeno ljetovanje iz snova!</p>
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@ use App\Models\Package;
                     <div class="section-heading">
                         <h2>Naša<em> ponuda</em></h2>
                         <img src="{{asset('images/line-dec.png')}}" alt="">
-                        <p>Uzivajte u najboljim svjetskim destinacijama po povoljnim cijenama uz vrhunski smjestaj.</p>
+                        <p>Uživajte u najboljim svjetskim destinacijama po povoljnim cijenama uz vrhunski smještaj.</p>
                     </div>
                 </div>
             </div>

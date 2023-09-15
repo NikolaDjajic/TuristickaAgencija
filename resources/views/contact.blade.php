@@ -10,7 +10,7 @@
                         <br>
                         <br>
                         <h2>Kontaktirajte<em> nas</em></h2>
-                        <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula</p>
+                        <p>Spremni ste da započnete svoje putovanje? Kontaktirajte nas danas kako bismo vam pomogli da stvorite nezaboravne trenutke na vašim budućim avanturama. Naša vrata su vam uvek otvorena.</p>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                         <i class="fa fa-envelope"></i>
                     </div>
 
-                    <h5><a href="#">contact@company.com</a></h5>
+                    <h5><a href="#">travelBL@gmail.com</a></h5>
 
                     <br>
                 </div>

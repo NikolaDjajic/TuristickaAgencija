@@ -1,16 +1,20 @@
 @extends('layout')
 <style>
-     /* Prilagođeni stil za povećanje visine inputa */
+    
      .custom-input-height {
-         height: 300px; /* Ovdje možete postaviti željenu visinu u pikselima */
+         height: 300px;
      }
 
-    /* Define a CSS class for the scrollable div */
-    .scrollable-div {
-        height: 500px; /* Set the desired height for the scrollable div */
-        overflow: auto; /* Add a scroll bar if the content overflows the height */
-    }
 
+    .scrollable-div {
+        height: 500px; 
+        overflow: auto; 
+    }
+    .carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; 
+  }
  </style>
 @section('content')
 
@@ -57,14 +61,14 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block w-100" src="{{asset('images/package-image-1-1200x600.jpg')}}" alt="First slide">
+                    <img src="{{ asset('storage/' . $package->slika) }}" alt="Slika">
                 </div>
                 <div class="carousel-item">
                   <img class="d-block w-100" src="{{asset('images/package-image-1-1200x600.jpg')}}" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="{{asset('images/package-image-1-1200x600.jpg')}}" alt="Third slide">
-                </div>
+                    <img class="d-block w-100" src="{{asset('images/package-image-1-1200x600.jpg')}}" alt="Second slide">
+               </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -82,9 +86,7 @@
             <div class="row" id="tabs">
               <div class="col-lg-4">
                 <ul>
-                  <li><a href='#tabs-2'><i class="fa fa-gift"></i> Opis ponude</a></li>
-                  <li><a href='#tabs-4'><i class="fa fa-info-circle"></i> Package Info</a></li>
-                 
+                  <li><a href='#tabs-2'><i class="fa fa-gift"></i> Opis ponude</a></li>                 
                   <li><a href='#tabs-6'><i class="fa fa-plus-circle"></i> Komentari</a></li>
                 </ul>
               </div>
@@ -98,27 +100,23 @@
                     <div class="row">
                        <div class="col-sm-6">
                             <label>Dostupno u </label>
-                       
                             <p>{{$package->godDoba}}</p>
                        </div>
 
                        <div class="col-sm-6">
                             <label>Broj nocenja</label>
-                       
                             <p>{{$package->brNocenja}}</p>
                        </div>
 
                        <div class="col-sm-6">
                             <label>Ukljucuje prevoz</label>
-                       
                             <p>{{$package->prevoz}}</p>
                        </div>
 
                        <div class="col-sm-6">
-                            <label>Adresa</label>
-                       
-                            <p>{{$package->adresa}}</p>
-                       </div>
+                         <label>Hotel</label>
+                         <p>{{$package->hotel}}, {{$package->adresa}}</p>
+                    </div>
                     </div>
                     <br>
                     <br>
@@ -128,94 +126,7 @@
                    <p>{{$package->opis}}</p>
                    </article>
                   
-                  <article id='tabs-4'>
-                    <h4>Package Info</h4>
-
-                    <ul class="list-group list-group-no-border">
-                      <li class="list-group-item" style="margin:0 0 -1px">
-                         <div class="row">
-                              <div class="col-md-2 col-sm-3">
-                                   <p class="pjVpProductPolicyTitle">
-                                        <strong>Check-in</strong>
-                                   </p>
-                              </div>
-                              <div class="col-md-10 col-sm-9">
-                                   <p>
-                                        Donec dapibus semper sem, ac ultrices sem sagittis ut. Donec sit amet erat elit, sed pellentesque odio. In enim ligula, euismod a adipiscing in, laoreet quis turpis. Ut accumsan dignissim rutrum.
-                                   </p>
-                              </div>
-                         </div>
-                      </li>
-
-                      <li class="list-group-item" style="margin:0 0 -1px">
-                           <div class="row">
-                                <div class="col-md-2 col-sm-3">
-                                     <p>
-                                          <strong>Check-out</strong>
-                                     </p>
-                                </div>
-
-                                <div class="col-md-10 col-sm-9">
-                                     <p>
-                                          Donec dapibus semper sem, ac ultrices sem sagittis ut. Donec sit amet erat elit, sed pellentesque odio. In enim ligula, euismod a adipiscing in, laoreet quis turpis. Ut accumsan dignissim rutrum.
-                                     </p>
-                                </div>
-                           </div>
-                      </li>
-
-                      <li class="list-group-item" style="margin:0 0 -1px">
-                           <div class="row">
-                                <div class="col-md-2 col-sm-3">
-                                     <p>
-                                          <strong>Pets</strong>
-                                     </p>
-                                </div>
-                                <div class="col-md-10 col-sm-9">
-                                     <p>
-                                          Not allowed
-                                     </p>
-                                </div>
-                           </div>
-                      </li>
-
-                      <li class="list-group-item" style="margin:0 0 -1px">
-                           <div class="row">
-                                <div class="col-md-2 col-sm-3">
-                                     <p>
-                                          <strong>Policies</strong>
-                                     </p>
-                                </div>
-                                <div class="col-md-10 col-sm-9">
-                                     <div>
-                                          <p>
-                                               Donec dapibus semper sem, ac ultrices sem sagittis ut. Donec sit amet erat elit, sed pellentesque odio. In enim ligula, euismod a adipiscing in, laoreet quis turpis. Ut accumsan dignissim rutrum. <br>
-                                                Donec dapibus semper sem, ac ultrices sem sagittis ut. Donec sit amet erat elit, sed pellentesque odio. In enim ligula, euismod a adipiscing in, laoreet quis turpis. Ut accumsan dignissim rutrum. <br>
-                                          </p>
-                                     </div>
-                                </div>
-                           </div>
-                      </li>
-                      
-                      <li class="list-group-item" style="margin:0 0 -1px">
-                           <div class="row">
-                                <div class="col-md-2 col-sm-3">
-                                     <p>
-                                          <strong>Fees</strong>
-                                     </p>
-                                </div>
-
-                                <div class="col-md-10 col-sm-9">
-                                     <div>
-                                          <p>
-                                               Donec dapibus semper sem, ac ultrices sem sagittis ut. Donec sit amet erat elit, sed pellentesque odio. In enim ligula, euismod a adipiscing in, laoreet quis turpis. Ut accumsan dignissim rutrum. <br>
-                                                Donec dapibus semper sem, ac ultrices sem sagittis ut. Donec sit amet erat elit, sed pellentesque odio. In enim ligula, euismod a adipiscing in, laoreet quis turpis. Ut accumsan dignissim rutrum. <br>
-                                          </p>
-                                     </div>
-                                </div>
-                           </div>
-                      </li>
-                    </ul>
-                  </article>
+                 
                   
 
                   <!-- KOMENTARI -->

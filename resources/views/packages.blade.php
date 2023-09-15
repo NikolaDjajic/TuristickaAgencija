@@ -14,8 +14,8 @@ use App\Models\Package;
                     <div class="cta-content">
                         <br>
                         <br>
-                        <h2>Nase <em>Ponude</em></h2>
-                        <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula</p>
+                        <h2>Naše <em>Ponude</em></h2>
+                        <p>Istražite svijet s našom raznolikom ponudom putovanja i doživite nezaboravne avanture.</p>
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@ use App\Models\Package;
                     <div class="section-heading">
                         <h2>Naša<em> ponuda</em></h2>
                         <img src="{{asset('images/line-dec.png')}}" alt="">
-                        <p>Uzivajte u najboljim svjetskim destinacijama po povoljnim cijenama uz vrhunski smjestaj.</p>
+                        <p>Uživajte u najboljim svjetskim destinacijama po povoljnim cijenama uz vrhunski smještaj.</p>
                     </div>
                 </div>
             </div>
